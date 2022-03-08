@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="page-title">
+        <br><h1 class="page-title">
           Currency Converter
-        </h1>
+        </h1> <br>
         <p class="page-subtitle">
-          Insert the value in dolar U$
-        </p>
+          Check out how much your dolar's correspond to <br> other currencies around the world!
+        </p> <br> <br><br>
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-        <label for="moeda"><b>Insert the value in dolar</b></label><br>
+        <label for="moeda"><b>Insert the value in dolar U$</b></label><br>
         <input type="number" id="valor" size="2" /><br>
         <button type="submit" onclick="ConverterEUR()">Conversion to Euro €</button>
         <button type="submit" onclick="ConverterBRL()">Conversion to Real R$</button>
         <button type="submit" onclick="ConverterCNY()">Conversion to Yuan ¥</button>
-       <h2 id="valorConvertido"></h2>
+       <h2 id="valueConverted"></h2>
       </div>
       <a href="https://alura.com.br/" target="_blank">
         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    <style type="text/css">body {
+    <style type="text/css">
+    body {
         font-family: "Roboto Mono", monospace;
         min-height: 400px;
         background-image: url("https://images-media.currency.com/6e89780f/1959/5495/93cc/37aa5e222ba9/on_page/shutterstock-367050494.jpg");
         background-color: #000000;
-        background-size: 100vh;
-        background-position: center;
+        background-size: 220vh;
+        background-position: absolute;
         background-repeat: no-repeat;
       }
       
@@ -38,6 +39,9 @@
         text-align: center;
         padding: 20px;
         height: 100vh;
+        background-color: black;
+        opacity:0.9;
+        
       }
       
       .page-title {
@@ -68,8 +72,8 @@
       }
       
       label {
-        color: black;
-        background-color: white;
+        color: white;
+     
       }
       
       button {
@@ -80,8 +84,9 @@
       }
       
       h2 {
-        color: #ffffff;
+        color: white;
         font-size: 30px;
+
       }
       </style>
       <script src="currencyConverter_IDa2.js"></script>
